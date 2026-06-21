@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #18191c; /* Changed to match your browser's dark background */
+  color: #ffffff;
+}
+
+/* Fullscreen flex wrapper to center the card */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The login card layout container */
+.login-box {
+  width: 360px;
+  background: #202225; /* Sleek dark card background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Big title centering inside the card */
+.login-box h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Stacks the form rows downward */
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form groups handle stacking each label directly over its input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b9bbbe;
+}
+
+.form-group input,
+.form-group select {
+  padding: 11px;
+  border-radius: 6px;
+  border: 1px solid #2f3136;
+  background-color: #2f3136;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't break the width */
+}
+
+.form-group input::placeholder {
+  color: #72767d;
+}
+
+/* Focus indicator when clicking inside inputs */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #5865f2;
+}
+
+/* Vertical login button */
+.login-box button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background: #4e5058; /* Slate grey to match the original layout */
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.login-box button:hover {
+  background: #6d6f78;
+}
